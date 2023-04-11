@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+        tools:context=".Material">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--button5-->
+        <Button
+            android:id="@+id/materialButton1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:text="MATERIAL"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/maquinariaButton1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--button7-->
+        <Button
+            android:id="@+id/maquinariaButton1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:onClick="irMaquinasMat"
+            android:text="MAQUINAS"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/registroButton1"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--button8-->
+        <Button
+            android:id="@+id/registroButton1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:onClick="irRegistroMat"
+            android:text="REGISTRO"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibSenv"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:onClick="irCosto_sin_envio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutMat"
+        app:srcCompat="@drawable/senv" />
+    <TextView
+        android:id="@+id/tvButSenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent"
+        android:text="COSTO SIN ENVIO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVsenv1"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/transparent"
+        android:text="Haz clic para calcular el costo del pedido sin considerar el envío, solo considera el precio del material por metros cúbicos y la cantidad"
+        android:textColor="@color/black1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibCenv"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="230dp"
+        android:onClick="irCosto_con_envio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutMat"
+        app:srcCompat="@drawable/cenv" />
+    <TextView
+        android:id="@+id/tvButCenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:background="@android:color/transparent"
+        android:text="COSTO CON ENVIO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/TVcenv1"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="450dp"
+        android:background="@android:color/transparent"
+        android:text="Haz clic para calcular el costo del pedido considerando el precio del material por metros cúbicos, la cantidad y el costo del envío con precisión"
+        android:textColor="@color/black1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

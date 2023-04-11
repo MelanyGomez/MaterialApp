@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--button5-->
+        <Button
+            android:id="@+id/materialButton3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:onClick="irMaterialReg"
+            android:text="MATERIAL"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/maquinariaButton3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--button7-->
+        <Button
+            android:id="@+id/maquinariaButton3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:onClick="irMaquinasReg"
+            android:text="MAQUINAS"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/registroButton3"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--button8-->
+        <Button
+            android:id="@+id/registroButton3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:text="REGISTRO"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="registro"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
