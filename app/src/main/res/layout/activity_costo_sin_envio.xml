@@ -47,9 +47,10 @@
         android:layout_marginStart="210dp"
         android:layout_marginTop="260dp"
         android:backgroundTint="@color/yellow2"
+        android:onClick="irEditar_costo_materiales"
         android:text="Editar costos"
-        android:textSize="10dp"
         android:textColor="@color/black"
+        android:textSize="10dp"
         app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
