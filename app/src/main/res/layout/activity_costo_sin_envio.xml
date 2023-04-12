@@ -69,6 +69,22 @@
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/et_cantidad_material_SENV"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Ingrese la cantidad de material en metros cúbicos"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:textColorHint="@color/gray3"
+        android:background="@drawable/format_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/buCal"
         android:layout_width="150dp"

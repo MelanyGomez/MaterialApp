@@ -53,15 +53,14 @@
         android:layout_marginStart="40dp"
         android:ems="10"
         android:inputType="number"
-        android:hint="Ingrese el nombre del material"
+        android:hint="Ingrese el costo del material por metro cúbico"
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="13dp"
         android:textColorHint="@color/gray3"
         android:background="@drawable/format_field"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
