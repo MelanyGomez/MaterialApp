@@ -7,7 +7,7 @@
     android:background="@color/white"
     tools:context=".editar_costo_materiales">
     <TextView
-        android:id="@+id/tv_nombre"
+        android:id="@+id/tv_nombre_mat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_nombre_material"
+        android:id="@+id/et_nombre_mat"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv_costo"
+        android:id="@+id/tv_costo_mat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_costo_material"
+        android:id="@+id/et_costo_mat"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="350dp"
@@ -68,7 +68,9 @@
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
         android:layout_marginTop="450dp"
-        android:background="@drawable/format_button"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/yellow2"
+        android:textColor="@color/black"
         android:text="Guardar"
         android:textSize="10dp"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,80 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".costo_sin_envio">
-
-    <ImageView
-        android:id="@+id/ivSenvp"
-        android:layout_width="360dp"
-        android:layout_height="130dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/senv" />
+    tools:context=".agregar_maquina">
     <TextView
-        android:id="@+id/tvButSenvP"
+        android:id="@+id/tv_nombre_maq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="90dp"
-        android:background="@android:color/transparent"
-        android:text="COSTO SIN ENVIO"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="150dp"
-        android:text="Seleccione el material"
-        android:textStyle="bold"
-        android:textSize="15dp"
-        android:textColor="@color/black1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/butEC"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="260dp"
-        android:onClick="irEditar_costo_materiales"
-        android:text="Editar costos"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        app:cornerRadius="20dp"
-        android:backgroundTint="@color/yellow2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="380dp"
-        android:text="Ingresa la cantidad en metros cúbicos"
+        android:text="Nombre de la maquina"
         android:textStyle="bold"
         android:textSize="15dp"
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_cantidad_material_SENV"
+        android:id="@+id/et_nombre_maq"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="450dp"
         android:layout_marginStart="40dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese la cantidad de material en metros cúbicos"
+        android:layout_marginTop="200dp"
+        android:hint="Ingrese el nombre del material"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:textColorHint="@color/gray3"
+        android:background="@drawable/format_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_descri_maq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"
+        android:text="Añada una pequeña descripción de la maquinaria"
+        android:textStyle="bold"
+        android:textColor="@color/black1"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/et_descri_maq"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:hint="Ingrese el nombre del material"
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="13dp"
@@ -86,20 +58,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/buCal"
+        android:id="@+id/but_guar_maq"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="520dp"
-        android:backgroundTint="@color/yellow2"
-        android:text="Calcular"
+        android:layout_marginTop="550dp"
+        android:text="Guardar"
         android:textSize="10dp"
-        android:textColor="@color/black"
         app:cornerRadius="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
