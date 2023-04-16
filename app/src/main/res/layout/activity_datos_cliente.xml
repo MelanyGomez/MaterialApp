@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".agregar_maquina">
+    tools:context=".datos_cliente">
     <TextView
-        android:id="@+id/tv_nombre_maq"
+        android:id="@+id/tv_nombre_cli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:layout_marginStart="20dp"
-        android:text="Nombre de la maquina"
+        android:text="Nombre del cliente"
         android:textStyle="bold"
         android:textSize="15dp"
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_nombre_maq"
+        android:id="@+id/et_nombre_cli"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="200dp"
-        android:hint="Ingrese el nombre del maquina"
+        android:hint="Ingrese el nombre del cliente"
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="13dp"
@@ -32,24 +32,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv_descr_maq"
+        android:id="@+id/tv_telefono_cli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:layout_marginStart="20dp"
-        android:text="Descripción"
+        android:text="Número telefónico del cliente"
         android:textStyle="bold"
-        android:textColor="@color/black1"
         android:textSize="15dp"
+        android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_descr_maq"
+        android:id="@+id/et_telefono_cli"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="350dp"
-        android:hint="Añada una pequeña descripción de la maquina"
+        android:hint="Ingrese el número telefónico del cliente"
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="13dp"
@@ -58,26 +58,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv_costo_maq"
+        android:id="@+id/tv_direc_cli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:layout_marginStart="20dp"
-        android:text="Costo de la renta por mes"
+        android:text="Dirección del cliente"
         android:textStyle="bold"
-        android:textColor="@color/black1"
         android:textSize="15dp"
+        android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_costo_maq"
+        android:id="@+id/et_direc_cli"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="500dp"
         android:layout_marginStart="40dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese el costo de la renta por mes"
+        android:layout_marginTop="500dp"
+        android:hint="La ingrese la dirección del cliente"
         android:textColor="@color/black"
         android:gravity="center"
         android:textSize="13dp"
@@ -86,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/but_guar_maq"
+        android:id="@+id/but_guar_cli"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
@@ -98,4 +96,6 @@
         android:backgroundTint="@color/yellow2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

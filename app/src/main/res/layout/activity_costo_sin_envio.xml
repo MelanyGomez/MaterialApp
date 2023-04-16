@@ -8,14 +8,14 @@
     tools:context=".costo_sin_envio">
 
     <ImageView
-        android:id="@+id/ivSenvp"
+        android:id="@+id/iv_csenv"
         android:layout_width="360dp"
         android:layout_height="130dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/senv" />
     <TextView
-        android:id="@+id/tvButSenvP"
+        android:id="@+id/tvB_csenv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/tv_selec_mat_csenv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/butEC"
+        android:id="@+id/b_edit_cost_csenv"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
@@ -58,7 +58,7 @@
 
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tv_ing_cantm_csenv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -70,7 +70,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/et_cantidad_material_SENV"
+        android:id="@+id/et_ing_cantm_csenv"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="450dp"
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/buCal"
+        android:id="@+id/b_calcular_csenv"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
@@ -99,7 +99,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <Button
+        android:id="@+id/b_limpiar_csenv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@color/yellow2"
+        android:text="Limpiar"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/b_agregar_csenv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@color/yellow2"
+        android:text="Agregar"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/b_generar_nota_csenv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@color/yellow2"
+        android:text="Generar nota"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
