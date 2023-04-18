@@ -5,6 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".datos_cliente">
+
+    <ImageView
+        android:id="@+id/iv_cliente"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cliente" />
+    <TextView
+        android:id="@+id/tvB_csenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:background="@android:color/transparent"
+        android:text="DATOS DEL CLIENTE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/tv_nombre_cli"
         android:layout_width="wrap_content"
@@ -43,6 +64,8 @@
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!--C A M B I A R    P O R    P H O N E-->
+    <!--
     <EditText
         android:id="@+id/et_telefono_cli"
         android:layout_width="320dp"
@@ -57,6 +80,23 @@
         android:background="@drawable/format_field"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    -->
+    <EditText
+        android:id="@+id/et_telefono_cli"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/format_field"
+        android:gravity="center"
+        android:hint="Ingrese el número telefónico del cliente"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray3"
+        android:textSize="13dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_direc_cli"
         android:layout_width="wrap_content"
@@ -96,6 +136,8 @@
         android:backgroundTint="@color/yellow2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
