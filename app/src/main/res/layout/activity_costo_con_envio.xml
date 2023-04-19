@@ -97,4 +97,11 @@
         app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="652dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
