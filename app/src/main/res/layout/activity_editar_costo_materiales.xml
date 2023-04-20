@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".editar_costo_materiales">
+    <ImageView
+        android:id="@+id/iv_editar_costo_materiales"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ed_material" />
+    <TextView
+        android:id="@+id/tv_editar_costo_materiales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:background="@android:color/transparent"
+        android:text="MATERIALES"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/tv_nombre_mat"
         android:layout_width="wrap_content"
