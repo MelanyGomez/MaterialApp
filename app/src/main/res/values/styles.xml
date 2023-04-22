@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black5">#FF000000</color>
+    <style name="SpinnerItemStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black5</item>
+    </style>
+</resources>
+

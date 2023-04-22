@@ -27,6 +27,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spCategorias"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/tv_selec_mat_csenv"
         android:layout_width="wrap_content"
@@ -46,7 +56,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
         android:layout_marginTop="260dp"
-        android:onClick="irEditar_costo_materiales"
+        android:onClick="ir_editar_costo_materiales"
         android:text="Editar costos"
         android:textColor="@color/black"
         android:textSize="10dp"
@@ -138,6 +148,8 @@
         app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

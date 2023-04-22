@@ -12,10 +12,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class editar_costo_materiales extends AppCompatActivity {
-    public EditText et_nombre_mat, et_costo_mat;
+    //public EditText et_nombre_mat, et_costo_mat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_costo_materiales);
+        ConexionSQLiteHelper conn  = new ConexionSQLiteHelper(this, "bd_materiales",null,1);
+        //et_nombre_mat = (EditText)findViewById(R.id.et_nombre_mat);
+        //et_costo_mat = (EditText)findViewById(R.id.et_costo_mat);
     }
+
+
+
 }
