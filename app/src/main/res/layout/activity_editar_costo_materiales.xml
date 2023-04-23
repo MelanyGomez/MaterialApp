@@ -29,13 +29,40 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_id_mat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="ID del material"
+        android:textColor="@color/black1"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id_mat"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/format_field"
+        android:gravity="center"
+        android:hint="Ingrese el ID del material"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray3"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_nombre_mat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="270dp"
         android:text="Nombre del material"
         android:textColor="@color/black1"
         android:textSize="15dp"
@@ -48,7 +75,7 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/format_field"
         android:gravity="center"
         android:hint="Ingrese el nombre del material"
@@ -63,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="420dp"
         android:text="Costo del material"
         android:textColor="@color/black1"
         android:textSize="15dp"
@@ -76,7 +103,7 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="470dp"
         android:background="@drawable/format_field"
         android:ems="10"
         android:gravity="center"
@@ -85,23 +112,24 @@
         android:textColor="@color/black"
         android:textColorHint="@color/gray3"
         android:textSize="13dp"
+        android:maxLength="6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/b_guardar_cm"
-        android:layout_height="50dp"
         android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="570dp"
         android:backgroundTint="@color/yellow2"
-        android:onClick="Registrar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="Registrar_mat"
         android:text="Guardar"
         android:textColor="@color/black"
         android:textSize="10dp"
-        app:cornerRadius="20dp"/>
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--<Button
         android:id="@+id/b_guardar_cm"
