@@ -8,14 +8,18 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.os.Bundle;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.SimpleCursorAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
 
-public class editar_costo_materiales extends AppCompatActivity{
+public class editar_costo_materiales extends AppCompatActivity {
     //Declaramos los objetos que vamos a usar
    public EditText et_id_mat, et_nombre_mat, et_costo_mat;
+
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,8 @@ public class editar_costo_materiales extends AppCompatActivity{
        et_id_mat = (EditText)findViewById(R.id.et_id_mat);
        et_nombre_mat = (EditText)findViewById(R.id.et_nombre_mat);
        et_costo_mat = (EditText)findViewById(R.id.et_costo_mat);
+
+
    }
    public void Registrar_mat (View view){
        //creamos un objeto llamado admin que va a manipulaar nuestra base de datos
@@ -60,13 +66,14 @@ public class editar_costo_materiales extends AppCompatActivity{
                et_costo_mat.setText("");
 
                Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
+               Toast.makeText(this, id_mat + " "+nombre_mat +" "+ costo_mat, Toast.LENGTH_SHORT).show();
            }
 
        }else{
 
            Toast.makeText(this, "Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
     }
-       Toast.makeText(this, id_mat + " "+nombre_mat +" "+ costo_mat, Toast.LENGTH_SHORT).show();
+
 
    }
 
