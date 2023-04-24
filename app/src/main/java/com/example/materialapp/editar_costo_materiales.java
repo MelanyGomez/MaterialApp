@@ -32,6 +32,7 @@ public class editar_costo_materiales extends AppCompatActivity {
 
 
    }
+
    public void Registrar_mat (View view){
        //creamos un objeto llamado admin que va a manipulaar nuestra base de datos
        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracon", null,1);
@@ -58,15 +59,15 @@ public class editar_costo_materiales extends AppCompatActivity {
                registro_mat.put("costo_mat", costo_mat);
                //insertamos en la tabla materiales nuestro contenedor llamado registro_mat
                BaseDeDatos.insert("materiales", null, registro_mat);
-               //cerramos la base de datos
-               BaseDeDatos.close();
+
+
                //deja limpios los edit text despues de registrar
                et_id_mat.setText("");
                et_nombre_mat.setText("");
                et_costo_mat.setText("");
-
+               BaseDeDatos.close();
                Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
-               Toast.makeText(this, id_mat + " "+nombre_mat +" "+ costo_mat, Toast.LENGTH_SHORT).show();
+               Toast.makeText(this, id_mat+nombre_mat+costo_mat,Toast.LENGTH_SHORT).show();
            }
 
        }else{

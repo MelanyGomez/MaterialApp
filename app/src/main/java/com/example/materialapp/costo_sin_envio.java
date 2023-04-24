@@ -20,35 +20,39 @@ import androidx.appcompat.app.AppCompatActivity;
 public class costo_sin_envio extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
-    public Spinner spinnerMateriales;
-    public ArrayList<String> listaMateriales;
-    public ArrayAdapter<String> materialesAdapter;
+    Spinner spinnerMateriales;
+    ArrayList<String> listaMateriales;
+    ArrayAdapter<String> materialesAdapter;
 
-    private ArrayList<String> obtenerNombresMateriales() {
+    public ArrayList<String> obtenerNombresMateriales() {
         ArrayList<String> listaMateriales = new ArrayList<>();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
-        SQLiteDatabase bd = admin.getWritableDatabase();
-        Cursor cursor = bd.rawQuery("SELECT nombre_mat FROM materiales", null);
+        SQLiteDatabase BaseDeDatos = admin.getReadableDatabase();
+        Cursor cursor = BaseDeDatos.rawQuery("SELECT nombre_mat FROM materiales", null);
         if (cursor.moveToFirst()) {
             do {
-                String nombre = cursor.getString(1);
+                String nombre = cursor.getString(0);
                 listaMateriales.add(nombre);
             } while (cursor.moveToNext());
         }
         cursor.close();
-        bd.close();
+        BaseDeDatos.close();
         return listaMateriales;
     }
-    @Override
+
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_costo_sin_envio);
 
-        spinnerMateriales = findViewById(R.id.spinnerMateriales);
+        spinnerMateriales = (Spinner)findViewById(R.id.spinnerMateriales);
 
         listaMateriales = obtenerNombresMateriales();
 
         materialesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, listaMateriales);
+
         materialesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinnerMateriales.setAdapter(materialesAdapter);
@@ -74,4 +78,5 @@ public class costo_sin_envio extends AppCompatActivity implements AdapterView.On
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 }

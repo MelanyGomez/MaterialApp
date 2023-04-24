@@ -19,6 +19,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         BaseDeDatos.execSQL("create table materiales(id_mat int primary key, nombre_mat text, costo_mat real)");
 
     }
+
     public boolean materialExiste(String id_mat) {
         SQLiteDatabase db = this.getReadableDatabase();
         String[] projection = { "id_mat" };
@@ -29,6 +30,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         cursor.close();
         return existe;
     }
+
+
 
 
 

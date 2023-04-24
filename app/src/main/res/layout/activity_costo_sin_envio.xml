@@ -31,14 +31,11 @@
         android:id="@+id/spinnerMateriales"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:layout_marginLeft="20dp"
         android:spinnerMode="dialog"
-        android:hint="texto"
-        android:contentDescription="texto"
         android:tint="@android:color/black"
         android:background="@color/yellow2"
-        android:entries="@array/listaMateriales"
         android:prompt="@string/selecciona_material"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +58,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="240dp"
         android:onClick="ir_editar_costo_materiales"
         android:text="Editar costos"
         android:textColor="@color/black"
@@ -71,37 +68,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <TextView
         android:id="@+id/tv_ing_cantm_csenv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="380dp"
-
+        android:layout_marginTop="300dp"
         android:text="Ingresa la cantidad en metros cúbicos"
         android:textStyle="bold"
         android:textSize="15dp"
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/et_ing_cantm_csenv"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="450dp"
         android:layout_marginStart="40dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese la cantidad de material en metros cúbicos"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="13dp"
-        android:textColorHint="@color/gray3"
+        android:layout_marginTop="340dp"
         android:background="@drawable/format_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ingrese la cantidad de material en metros cúbicos"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray3"
+        android:textSize="13dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ing_total_csenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
+        android:text="Total: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <Button
         android:id="@+id/b_calcular_csenv"
         android:layout_width="150dp"
