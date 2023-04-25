@@ -1,7 +1,6 @@
 package com.example.materialapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -50,6 +49,7 @@ public class editar_costo_materiales extends AppCompatActivity {
                Toast.makeText(this, "El material con ID " + id_mat + " ya existe", Toast.LENGTH_SHORT).show();
 
            } else {
+
                //creamos un objeto de la clase ContentValues y se llama registro_mat
                //va a almacenar nuestros datos
                ContentValues registro_mat = new ContentValues();
@@ -77,5 +77,11 @@ public class editar_costo_materiales extends AppCompatActivity {
 
 
    }
+
+    public void ir_costo_senv(View view){
+        Intent intent = new Intent(editar_costo_materiales.this, costo_sin_envio.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+    }
 
 }

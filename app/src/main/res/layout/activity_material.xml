@@ -7,6 +7,8 @@
     android:background="@color/white"
         tools:context=".Material">
 
+
+
     <LinearLayout
         android:id="@+id/linearLayoutMat"
         android:layout_width="wrap_content"
@@ -126,7 +128,20 @@
         android:textColor="@color/black1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <Button
+        android:id="@+id/b_edit_cost_csenv2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="536dp"
+        android:backgroundTint="@color/yellow2"
+        android:onClick="ir_editar_costo_materiales"
+        android:text="Editar costos"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 

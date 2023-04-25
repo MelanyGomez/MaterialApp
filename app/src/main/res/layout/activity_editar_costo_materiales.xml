@@ -131,6 +131,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/b_ir_costo_senv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@color/yellow2"
+        android:onClick="ir_costo_senv"
+        android:text="Volver"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!--<Button
         android:id="@+id/b_guardar_cm"
         android:layout_height="50dp"

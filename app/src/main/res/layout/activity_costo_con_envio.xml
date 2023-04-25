@@ -40,22 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/butEC"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="240dp"
-        android:backgroundTint="@color/yellow2"
-        android:onClick="irEditar_costo_materiales"
-        android:text="Editar costos"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        app:cornerRadius="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <TextView
         android:id="@+id/tv2"

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -12,6 +13,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +36,8 @@ public class costo_sin_envio extends AppCompatActivity implements AdapterView.On
             do {
                 String nombre = cursor.getString(0);
                 listaMateriales.add(nombre);
+                Log.d("nombre", nombre);
+               // Toast.makeText(this,);
             } while (cursor.moveToNext());
         }
         cursor.close();
@@ -63,12 +68,12 @@ public class costo_sin_envio extends AppCompatActivity implements AdapterView.On
         
 
 
-    public void ir_editar_costo_materiales(View view){
-        Intent intent = new Intent(costo_sin_envio.this,editar_costo_materiales.class);
+
+    public void ir_datos_cliente(View view){
+        Intent intent = new Intent (costo_sin_envio.this, datos_cliente.class);
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
     }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 

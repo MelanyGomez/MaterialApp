@@ -35,5 +35,10 @@ public class Material extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
     }
+    public void ir_editar_costo_materiales(View view){
+        Intent intent = new Intent(Material.this,editar_costo_materiales.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+    }
 
 }

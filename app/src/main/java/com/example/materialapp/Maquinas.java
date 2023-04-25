@@ -19,9 +19,5 @@ public class Maquinas extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
     }
-    public void irRegistroMaq(View view) {
-        Intent intent = new Intent(Maquinas.this, Registro.class);
-        startActivity(intent);
-        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
-    }
+
 }
